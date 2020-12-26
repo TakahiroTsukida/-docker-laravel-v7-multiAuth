@@ -17,7 +17,7 @@ Docker-composeを使用したLaravelのバージョン７のプロジェクト<b
 # 開発
 - リポジトリをclone
 ````
-git clone https://github.com/TakahiroTsukida119/docker-laravel-v7-multiAuth.git
+git clone https://github.com/TakahiroTsukida/-docker-laravel-v7-multiAuth.git
 ````
 
 - docker-laravel-v7-multiAuthディレクトリに移動
