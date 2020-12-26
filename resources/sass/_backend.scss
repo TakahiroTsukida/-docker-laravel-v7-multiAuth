@@ -1,0 +1,102 @@
+.user-index-table {
+    text-align: center;
+    td {
+        padding: 20px 5px;
+    }
+    th.name {
+        width: 30%;
+    }
+    th.gender {
+        width: 14%;
+    }
+    th.age {
+        width: 17%;
+    }
+    th.join {
+        width: 39%;
+    }
+    a {
+        color: $black;
+    }
+}
+.index-group > .search-group {
+    background-color: #ffffff;
+    border: solid 1px #e2e3e5;
+    border-radius: 5px;
+    margin: 0 0 15px 0;
+}
+.index-group > .search-group,
+.index-group > .sort-group {
+    .name-group,
+    .gender-group,
+    .join-group,
+    .sort-group {
+        padding: 10px 10px 0 10px;
+        width: 100%;
+    }
+    .search-btn-group {
+        padding: 10px;
+        width: 100%;
+    }
+    .join-group {
+        display: flex;
+    }
+}
+.index-group > .search-group {
+    .name-group {
+        input.name {
+            display: block;
+            width: 100%;
+            height: calc(1.6em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+    }
+    .gender-group,
+    .sort-group {
+        select.gender,
+        select.sort {
+            display: block;
+            width: 100%;
+            height: calc(1.6em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+    }
+    .join-group {
+        label {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(1.6em + 0.75rem + 2px);
+        }
+        input.join-date {
+            width: 60%;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            height: calc(1.6em + 0.75rem + 2px);
+            color: rgb(162 162 162);
+        }
+    }
+    .search-btn-group {
+        .search-btn {
+            width: 100%;
+            border-radius: 25px;
+        }
+    }
+}

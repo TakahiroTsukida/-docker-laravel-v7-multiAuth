@@ -1,0 +1,103 @@
+// ==========================================================
+// auth-form
+// ==========================================================
+.container {
+    width: 100%;
+    margin: 30px auto;
+}
+.auth-form-group {
+    margin: 120px 0;
+    @media #{$tab} {
+        margin: 200px 0;
+    }
+}
+.auth-form-group > .form-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(255 255 255);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 50px $black;
+    @media #{$pc} {
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+.auth-form-group > .form-card > .body {
+    padding: 20px;
+    @media #{$tab} {
+        padding: 40px 110px;
+    }
+}
+.auth-form-group > .form-card > .body > h1 {
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-weight: 900;
+    @media #{$pc} {
+        font-size: 18px;
+    }
+}
+.auth-form-group > .form-card > .body {
+    .text-box {
+        margin: 10px 0 20px 0;
+    }
+    label.name,
+    label.kana {
+        display: block;
+    }
+    .text-first {
+        width: 49%;
+        margin-right: 2%;
+        float: left;
+    }
+    .text-second {
+        width: 49%;
+        margin: 0;
+    }
+    .submit-btn {
+        font-weight: 900;
+        width: 100%;
+        display: block;
+        margin: 15px 0;
+    }
+    .forgot-pass {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+    }
+    label {
+        font-size: 13px;
+        &.transition-label {
+            margin: 0 0 20px 0;
+            width: 100%;
+        }
+    }
+    a {
+        &.transition-btn {
+            font-size: 13px;
+            display: inline;
+            vertical-align: top;
+            padding: 5px 0;
+        }
+    }
+}
+
+.auth-form-group > .form-card > .body {
+    .how-to-message {
+        font-size: 15px;
+        margin: 40px 0px;
+    }
+}
+.auth-form-group > .form-card > .body > .google-auth-btn-group {
+    .google-login {
+        font-weight: 900;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+
