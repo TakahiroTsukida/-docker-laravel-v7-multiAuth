@@ -2,6 +2,16 @@
 Docker-composeを使用したLaravelのバージョン７のプロジェクト<br>
 マルチログインを日本語化したUI/UX込みで実装済み
 
+userログイン
+![user-login-docker-laravel-v7-multiAuth](https://user-images.githubusercontent.com/59963646/103163511-173f5500-4842-11eb-913f-7ee9d0982daf.png)
+
+ハンバーガーメニュー
+![humbergerMenu-docker-laravel-v7-multiAuth](https://user-images.githubusercontent.com/59963646/103163568-b2d0c580-4842-11eb-90dd-2c03223f9cfd.png)
+
+adminログイン
+![admin-login-docker-laravel-v7-multiAuth](https://user-images.githubusercontent.com/59963646/103163527-3f2eb880-4842-11eb-95eb-24aaec57d156.png)
+
+
 # 開発環境
 - Laravel Framework 7.30.1 
 - PHP 7.4.11

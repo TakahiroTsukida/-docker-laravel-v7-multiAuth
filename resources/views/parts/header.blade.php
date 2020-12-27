@@ -1,9 +1,10 @@
 <nav class="navbar">
     <a class="navbar-brand" href="{{ url('/') }}">
-        ジム名:アプリ
+        アプリLogo
     </a>
 
-    <div class="nav-wrapper"><!-- ②ナビゲーションメニュー -->
+    <!-- ②ナビゲーションメニュー -->
+    <div class="nav-wrapper">
         <nav class="header-nav">
             <ul class="nav-list">
                 @if(Auth::guard('user')->check())
@@ -38,26 +39,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            月会費の確認
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            会費未払いリスト
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            メール
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            管理者情報
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <form class="nav-link" action="{{ route('backend.logout') }}" method="POST">
                             @csrf
                             <button type="submit">ログアウト</button>
@@ -79,7 +60,8 @@
         </nav>
     </div>
 
-    <div id="burger-btn" class="open"><!-- ③ハンバーガーボタン -->
+    <!-- ③ハンバーガーボタン -->
+    <div id="burger-btn" class="open">
         <span class="bar bar_top"></span>
         <span class="bar bar_mid"></span>
         <span class="bar bar_bottom"></span>
