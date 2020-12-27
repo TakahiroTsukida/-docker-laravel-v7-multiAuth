@@ -45,23 +45,27 @@ cp .env.example .env
 docker exec -it docker-laravel-v7-multiAuth_app_1 bash
 ````
 - 以下コンテナ内で実行
+- composerインストール
+````
+composer install
+````
+- Laravel/Ui
+````
+composer require laravel/ui 2.*
+````
 - APP_KEY 生成
 ````
 php artisan key:generate
-````
-
-- npm install
-````
-npm install
 ````
 - マイグレーションとテストデータ投入
 ````
 php artisan migrate --seed
 ````
-- 必要に応じてLaravel/Uiを取り込む
+- npm install
 ````
-composer require laravel/ui 2.*
+npm install
 ````
+
 
 # URL
 |環境|URL|
