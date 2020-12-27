@@ -11,13 +11,17 @@ Docker-composeを使用したLaravelのバージョン７のプロジェクト<b
 # Dockerコンテナ
 - app　プロジェクト
 - nginx　webサーバー
-- mysql DB
-- minio AWSのS3を想定
+- mysql　DB
+- minio　AWSのS3を想定
 
 # 開発
 - リポジトリをclone
 ````
-git clone https://github.com/TakahiroTsukida/-docker-laravel-v7-multiAuth.git
+git clone https://github.com/TakahiroTsukida/docker-laravel-v7-multiAuth.git
+````
+- ディレクトリ名を変更したい場合は先に変更しておく
+````
+mv docker-laravel-v7-multiAuth 変更したい名前
 ````
 
 - docker-laravel-v7-multiAuthディレクトリに移動
@@ -28,7 +32,7 @@ cd docker-laravel-v7-multiAuth
 ## 初期設定
 - dockerコンテナ内に入る
 ````
-docker exec -it laravel_sample_app_1 bash
+docker exec -it docker-laravel-v7-multiAuth_app_1 bash
 ````
 
 - npm install
@@ -55,5 +59,5 @@ composer require laravel/ui 2.*
 # その他の使い方
 - 基本的なLaravelのコマンドはコンテナ内に入って打つ方が分かりやすい
 ```
-docker exec -it laravel_sample_app_1 bash
+docker exec -it docker-laravel-v7-multiAuth_app_1 bash
 ```
