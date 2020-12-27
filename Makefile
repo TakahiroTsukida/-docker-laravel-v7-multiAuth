@@ -2,8 +2,8 @@
 init:
 	cp .env.example .env
 	docker-compose up -d --build
-	docker-compose exec app composer-install
-	docker-compose exec app composer require laravel/ui 2.*
-	docker-compose exec app php artisan key:generate
-	docker-compose exec app npm-install
-	docker-compose exec app php artisan migrate --seed
+	docker-compose exec docker-laravel-v7-multiauth_app_1 composer-install
+	docker-compose exec docker-laravel-v7-multiauth_app_1 composer require laravel/ui 2.*
+	docker-compose exec docker-laravel-v7-multiauth_app_1 php artisan key:generate
+	docker-compose exec docker-laravel-v7-multiauth_app_1 npm-install
+	docker-compose exec docker-laravel-v7-multiauth_app_1 php artisan migrate --seed
