@@ -40,6 +40,10 @@ cp .env.example .env
 ````
 
 ## 初期設定
+- dockerコンテナ起動
+````
+docker-compose up -d
+````
 - dockerコンテナ内に入る
 ````
 docker exec -it docker-laravel-v7-multiAuth_app_1 bash
