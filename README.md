@@ -29,10 +29,6 @@ adminログイン
 ````
 git clone https://github.com/TakahiroTsukida/docker-laravel-v7-multiAuth.git
 ````
-- ディレクトリ名を変更したい場合は先に変更しておく
-````
-mv docker-laravel-v7-multiAuth 変更したい名前
-````
 
 - docker-laravel-v7-multiAuthディレクトリに移動
 ````
@@ -40,34 +36,21 @@ cd docker-laravel-v7-multiAuth
 ````
 
 ## 初期設定
-- dockerコンテナ内に入る
+- 環境構築
 ````
+make init
+````
+
+# How to
+
+- 基本的なLaravelのコマンドはコンテナ内に入って打つ方が分かりやすい
+```
 docker exec -it docker-laravel-v7-multiAuth_app_1 bash
-````
-
-- npm install
-````
-npm install
-````
-
-- マイグレーションとテストデータ投入
-````
-php artisan migrate --seed
-````
-- 必要に応じてLaravel/Uiを取り込む
-````
-composer require laravel/ui 2.*
-````
+```
+- 必要に応じてMakefileを編集して自分でコマンドを作成すると良い
 
 # URL
 |環境|URL|
 |---|---|
 |アプリ本体 |http://localhost|
 |minio |http://localhost:9000|
-
-
-# その他の使い方
-- 基本的なLaravelのコマンドはコンテナ内に入って打つ方が分かりやすい
-```
-docker exec -it docker-laravel-v7-multiAuth_app_1 bash
-```
